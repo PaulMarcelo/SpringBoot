@@ -21,6 +21,7 @@ public class Utils {
 	static final int THRESHOLD = 200;
 
 	public static boolean isBlurImage(byte[] arrayImage, String path) {
+		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 		Mat image = Imgcodecs.imdecode(new MatOfByte(arrayImage), Imgcodecs.IMREAD_UNCHANGED);
 		// Mat image = Imgcodecs.imread(location); // location path local imagen
 		Mat destination = new Mat();
