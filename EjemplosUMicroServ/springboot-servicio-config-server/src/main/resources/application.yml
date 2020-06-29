@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///D:/SpringProject/GitHub/SpringBoot/EjemplosUMicroServ/config
+server:
+  port: 8888
